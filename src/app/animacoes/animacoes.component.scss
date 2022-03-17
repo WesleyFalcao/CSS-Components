@@ -1,0 +1,113 @@
+.grid-animado {
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: 18.8vh 18.8vh 18.8vh 18.8vh 18.8vh;
+}
+
+/////////////////////////////////////  1  ///////////////////////////////////////////
+
+.animacao1:hover{
+    animation: animacao1 1s;
+    animation-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+@keyframes animacao1{
+    0%{
+         transform: translateX(0);
+    }
+    50%{
+         transform: translateX(100px);
+    }
+    100%{
+         transform:  translateX(0);
+    }
+}
+
+/////////////////////////////////////  2  ///////////////////////////////////////////
+
+.animacao2:hover{
+    animation-name: animacao2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+@keyframes animacao2{
+    0%{
+         transform: translateX(0);
+    }
+    50%{
+         transform: translateX(100px);
+    }
+    100%{
+         transform: translateX(0);
+    }
+}
+
+/////////////////////////////////////  3  ///////////////////////////////////////////
+
+.animacao3{
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+.animacao3:hover{
+    background-color:white;
+}
+
+/////////////////////////////////////  4  ///////////////////////////////////////////
+
+.animacao4:hover{
+    animation: animacao4 1s;
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+    color: white;
+}
+
+@keyframes animacao4 {
+    0%{
+         transform: translate(0);
+    }
+    50%{
+         transform: translateY(-10%);
+    }
+   
+}
+
+/////////////////////////////////////  5  ///////////////////////////////////////////
+
+.animacao5:hover{
+    animation: animacao5 10s ease infinite;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    background-size: 300% 300%;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+@keyframes animacao5 {
+    0%{
+         background-position: 0 50%;
+    }
+    50%{
+         background-position: 100% 50%;
+    }
+    100%{
+         background-position: 0% 50%;
+    }
+}
+
+.animacao6:hover{
+
+}
+@keyframes animacao6{
+    
+}
