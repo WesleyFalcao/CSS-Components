@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.div > p {
+    color: red;
+}
+
+.div-1 p {
+    color: red;
+}
+
+
+
+//selecionando os hrefs que começam com https
+a[href ^=https]{
+    color: red;
+}
+
+
+//selecionando os hrefs que terminam com learn
+a[href $=learn]{
+    color: blue;
+}
+
+
+//selecionando os hrefs que contém a palavra learn
+a[href *=learn]{
+    color: black;
+    font-size: 20px;
+}
+
+
+//selecionando os parágrafos que contém o id igual a par-id
+p[id=par-id]{
+    color: red;
+}
+
+
+p:hover{
+    color: darkmagenta;
+}
+
+
+a:active{
+    font-size: x-large;
+}
+
+
+.teste:active{
+    background-color: rebeccapurple;
+}
+
+
+//selecionando a primeira linha de um parágrafo
+.par::first-line{
+    color: red;
+}
+
+
+//selecionando a primeira letra 
+.par::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+
+
+//selecionando todos os parágrafos exeto o primeiro
+p:not(:first-child){
+    // color: red;
+}
+
+
+//selecionando todos os parágrafos exeto que o contém a classe "exeto"
+p:not(.exeto){
+    // color: blue;
+}
+
+//em um grupo de parágrafos, selecione os pares, considerando que vai do 1° até o último
+p:nth-child(even){
+    // color: red;
+}
+
+//em um grupo de parágrafos, selecione os inpares, considerando que vai do 1° até o último
+p:nth-child(odd){
+    // color: blue;
+}
+
+//em um grupo de parágrafos, selecine o quarto parágrafo
+p:nth-child(4){
+    // color: green;
+}
+
+//em um grupo de parágrafos, selecione de 3 em 3
+p:nth-child(3n){
+    color: green;
+}
