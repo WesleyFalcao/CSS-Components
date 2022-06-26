@@ -4,7 +4,7 @@ import { AnimacoesComponent } from './animacoes/animacoes.component';
 import { SeletoresComponent } from './seletores/seletores.component';
 
 const routes: Routes = [
-  {path: 'animacoes', component: AnimacoesComponent},
+  {path: '', component: AnimacoesComponent},
   {path: 'selectores', component: SeletoresComponent}
 ];
 
