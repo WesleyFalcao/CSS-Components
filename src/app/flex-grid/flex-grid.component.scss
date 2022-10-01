@@ -1,0 +1,35 @@
+.div-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.flex > div{
+    flex: 1 1 200px
+}
+
+.div-width-img{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img-aling{
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
