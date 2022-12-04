@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import VanillaTilt from 'vanilla-tilt'
 
 @Component({
   selector: 'app-card-hover',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardHoverComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+   }
 
   ngOnInit(): void {
+    VanillaTilt.init(document.querySelector('card') as any);
   }
 
 }
