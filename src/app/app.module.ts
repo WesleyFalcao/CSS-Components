@@ -11,6 +11,8 @@ import { FlexGridComponent } from './flex-grid/flex-grid.component';
 import { CardHoverComponent } from './card-hover/card-hover.component';
 import { TooltipComponent } from './tooltip/tooltip.component';
 import { MenuComponent } from './menu/menu.component';
+import { LoadingComponent } from './loading/loading.component';
+import { Button3dComponent } from './button3d/button3d.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MenuComponent } from './menu/menu.component';
     FlexGridComponent,
     CardHoverComponent,
     TooltipComponent,
-    MenuComponent
+    MenuComponent,
+    LoadingComponent,
+    Button3dComponent
   ],
   imports: [
     BrowserModule,

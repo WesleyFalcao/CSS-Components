@@ -1,0 +1,21 @@
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.c-loading{
+    animation: loading 1s infinite;
+    width: 50px;
+    height: 50px;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51d4db;
+    border-radius: 50%;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}

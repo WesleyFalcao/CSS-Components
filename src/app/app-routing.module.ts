@@ -8,6 +8,8 @@ import { FlexGridComponent } from './flex-grid/flex-grid.component';
 import { GaugeComponent } from './gauge/gauge.component';
 import { RegistrationEmailComponent } from './registration-email/registration-email.component';
 import { SeletoresComponent } from './seletores/seletores.component';
+import { LoadingComponent } from './loading/loading.component';
+import { Button3dComponent } from './button3d/button3d.component';
 
 const routes: Routes = [
   {path: '', component: AnimacoesComponent},
@@ -18,6 +20,9 @@ const routes: Routes = [
   {path: 'card', component: CardHoverComponent},
   {path: 'tooltip', component: TooltipComponent},
   {path: 'menu', component: MenuComponent},
+  {path: 'loading', component: LoadingComponent},
+  {path: 'button3d', component: Button3dComponent},
+
 ];
 
 @NgModule({
